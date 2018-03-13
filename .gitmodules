@@ -1,0 +1,3 @@
+[submodule "dependencies/neojs"]
+	path = dependencies/neojs
+	url = https://bitbucket.org/neosmartblinds/neojs

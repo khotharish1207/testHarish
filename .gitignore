@@ -1,0 +1,13 @@
+# NPM
+node_modules
+*.log
+
+# Phonegap
+www
+platforms
+plugins
+builds
+.idea/
+
+# Mac
+.DS_Store

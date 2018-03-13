@@ -1,0 +1,68 @@
+.list-group {
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    color: #00b7df;
+    border-radius: 0px !important;
+    border-bottom: 1px solid #bebebe;
+    padding: 15px 0;
+    border-bottom: 2px solid red;
+}
+
+.list-group-item-title {
+    color: #00b7df;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.list-group-control-title {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #00b7df;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.app-room-icon {
+    width: 30%;
+}
+
+.roomlistitem h5 {
+    color: #bebebe;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.roomlistitem h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.schedulelistitem {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.schedulelistitem h4 {
+    margin-top: 0.5px;
+}
+.schedulelistitem:focus {
+    text-decoration: none;
+}
+
+.none-in-list {
+    text-align: center;
+}
+.none-in-list p {
+    margin-top: 12.5px;
+    color: #00b7df;
+}
+
+.blind-list {
+    padding-bottom: 50px;
+}
+
+.list-group-item-right-button:active {
+    box-shadow: 0 0 50px 5px rgb(0, 183, 223);
+}

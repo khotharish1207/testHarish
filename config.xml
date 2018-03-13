@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.neosmartblinds.bleapp" version="1.1.8" versionCode="118" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Neo Smart Blinds Blue</name>
+    <description>
+        Control your Neo Smart Blinds via bluetooth with this app.
+    </description>
+    <author email="marc-etienne@neosmartblinds.com" href="http://www.neosmartblinds.com">
+        Marc-Etienne Brunet
+    </author>
+    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="permissions" value="none" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="target-device" value="universal" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="deployment-target" value="9" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#00B7DF" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <icon src="res/logo.png" />
+    <icon gap:platform="ios" height="57" src="res/iOS/Icon.png" width="57" />
+    <icon gap:platform="ios" height="60" src="res/iOS/Icon-60.png" width="60" />
+    <icon gap:platform="ios" height="120" src="res/iOS/Icon-60@2x.png" width="120" />
+    <icon gap:platform="ios" height="180" src="res/iOS/Icon-60@3x.png" width="180" />
+    <icon gap:platform="ios" height="76" src="res/iOS/Icon-76.png" width="76" />
+    <icon gap:platform="ios" height="152" src="res/iOS/Icon-76@2x.png" width="152" />
+    <icon gap:platform="ios" height="29" src="res/iOS/Icon-small.png" width="29" />
+    <icon gap:platform="ios" height="58" src="res/iOS/Icon-small@2x.png" width="58" />
+    <icon gap:platform="ios" height="40" src="res/iOS/Icon-40.png" width="40" />
+    <icon gap:platform="ios" height="80" src="res/iOS/Icon-40@2x.png" width="80" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.0.0" />
+    <gap:splash src="splash.png" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashMaintainAspectRatio" value="false" />
+    <gap:splash gap:platform="android" src="res/splash.png" />
+    <gap:splash gap:platform="ios" height="480" src="res/iOS/Default.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/iOS/Default@2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="568" src="res/iOS/Default-568h.png" width="320" />
+    <gap:splash gap:platform="ios" height="1136" src="res/iOS/Default-568h@2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1334" src="res/iOS/Default-667h@2x.png" width="750" />
+    <gap:splash gap:platform="ios" height="2208" src="res/iOS/Default-Portrait-736h@3x.png" width="1242" />
+    <gap:splash gap:platform="ios" height="1242" src="res/iOS/Default-Landscape-736h@3x.png" width="2208" />
+    <gap:splash gap:platform="ios" height="1024" src="res/iOS/Default-Portrait.png" width="768" />
+    <gap:splash gap:platform="ios" height="768" src="res/iOS/Default-Landscape.png" width="1024" />
+    <gap:splash gap:platform="ios" height="2048" src="res/iOS/Default-Portrait@2x.png" width="1536" />
+    <gap:splash gap:platform="ios" height="1536" src="res/iOS/Default-Landscape@2x.png" width="2048" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <content src="index.html" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <content src="index.html" />
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <allow-navigation href="http://*/*" />
+    </platform>
+    <plugin name="cordova-plugin-geolocation" />
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <plugin name="cordova-plugin-ble-central" source="git" spec="https://github.com/mebrunet/cordova-plugin-ble-central" />
+    <config-file mode="replace" parent="NSBluetoothPeripheralUsageDescription" platform="ios">
+        <string>Enables control of compatible blinds, shades, and other window coverings.</string>
+    </config-file>
+</widget>

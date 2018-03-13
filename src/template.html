@@ -1,0 +1,24 @@
+<!DOCTYPE html> <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data: 'unsafe-inline' 'unsafe-eval';">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD38s_Hsg5scuKxETgCQofgUbbV3W351wQ&libraries=geometry,places,visualization"></script>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      document.addEventListener("deviceready", onDeviceReady, false);
+      // Note moved back button control to AppStore.
+      function onDeviceReady() {
+        window.open = cordova.InAppBrowser.open;
+        window.cordova = cordova;
+        window.ble = ble;
+      }
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.swipable {
+    margin: 10px 3%;
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+
+.FavPositionSlider > div {
+     margin-top: 0px !important;
+}
+
+.FavPositionSliderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.status {
+    padding: 2vh;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.status .connection,
+.status .rssi {
+    color: green;
+}
+
+.status .battery {
+    color: red;
+}
+
+.advance {
+    margin: 0 7%;
+}

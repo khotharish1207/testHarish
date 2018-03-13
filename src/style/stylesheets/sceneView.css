@@ -1,0 +1,62 @@
+/******* Scene CSS ******/
+
+.selected {
+    background-color: #00b7df;
+    color: White;
+}
+
+.day-input {
+    border: 1px solid gray;
+    width: 40px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.action-input {
+    border: 1px solid gray;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.scene-timepicker > div {
+    width: 100%
+}
+
+.scene-timepicker > input {
+    text-align: center;
+}
+
+.sceneListItemInneDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.sceneTimeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titleText {
+    font-size: 21px;
+    /*color: #00b7df;*/
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.sceneViewBottomButtonsDiv {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+}
+
+.sceneBlindList {
+    width: 50%;
+    height: 25px;
+    overflow: hidden;
+    float: left;
+    color: black;
+}

@@ -1,0 +1,14 @@
+{
+    "env": {
+        "mocha": true
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": [ 2, { "devDependencies": true } ],
+      "no-unused-expressions": 0,
+      "no-unused-vars": 1
+    },
+    "globals": {
+      "expect": false,
+      "chai": false
+    } 
+}
